@@ -1,0 +1,143 @@
+<!--Header cliente-->
+<header>
+  <div class="row">
+    <div class="col-4"></div>
+    <div class="col-6"><h2>Ayuda 33 2345 8776</h2></div>
+  </div>
+</header>
+
+<div class="container">
+  <!-- <hello name="{{ name }}"></hello> -->
+
+  <!--Alerta bienvenida-->
+  <section class="content-messenge">
+    <div class="alert alert-warning" role="alert">
+      <p>
+        Tienes un saldo pendiente de tres mensualidades $750.00
+        <button type="button" class="btn btn-primary">Pagar ahora</button>
+      </p>
+    </div>
+  </section>
+
+  <!--Modulo pagar por fechas-->
+  <section class="pay-mensualidades">
+    <h2>Selecciona las mensualidades a pagar</h2>
+    <div class="row">
+      <div class="row align-items-start">
+        <div class="col">
+          <h3>Mensualidades</h3>
+          <select class="form-select">
+            <option selected>Selecciona las mensualidades</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="3">4</option>
+            <option value="3">5</option>
+            <option value="3">6</option>
+            <option value="3">7</option>
+            <option value="3">8</option>
+            <option value="3">9</option>
+            <option value="3">10</option>
+            <option value="3">11</option>
+            <option value="3">12</option>
+            <option value="3">24</option>
+          </select>
+        </div>
+        <div class="col">
+          <h3>Cantidad</h3>
+          <div class="input-group mb-3">
+            <span class="input-group-text">$</span>
+            <input
+              type="text"
+              class="form-control"
+              aria-label="Amount (to the nearest dollar)"
+              disabled
+            />
+            <span class="input-group-text">.00</span>
+          </div>
+        </div>
+        <div class="col">
+          <h3 class="acción">Acción</h3>
+          <button type="button" class="btn btn-light">Pagar</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Tabla de mensualidades pagadas-->
+  <section class="pay-table">
+    <h2>Historial de pagos</h2>
+    <div class="box-btn-right">
+      <button type="button" class="btn btn-success">
+        <i class="bi bi-download"></i> Descargar todos los recibos
+      </button>
+    </div>
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Fecha</th>
+          <th scope="col">Casa</th>
+          <th scope="col">Propietario</th>
+          <th scope="col">Mes</th>
+          <th scope="col">Cantidad</th>
+          <th scope="col">Recibo</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">26/02/2022</th>
+          <td>66</td>
+          <td>Carmen Franco</td>
+          <td>Enero</td>
+          <td>$250.00</td>
+          <td>
+            <button class="btn btn-info">
+              <i class="bi bi-download"></i> Descargar
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">26/02/2022</th>
+          <td>66</td>
+          <td>Carmen Franco</td>
+          <td>Enero</td>
+          <td>$250.00</td>
+          <td>
+            <button class="btn btn-info">
+              <i class="bi bi-download"></i> Descargar
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">26/02/2022</th>
+          <td>66</td>
+          <td>Carmen Franco</td>
+          <td>Enero</td>
+          <td>$250.00</td>
+          <td>
+            <button class="btn btn-info">
+              <i class="bi bi-download"></i> Descargar
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!--Paginado-->
+  <section>
+    <nav>
+      <ul class="pagination">
+        <li class="page-item"><a class="page-link" href="#">Anterior</a></li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">Siguiente</a></li>
+      </ul>
+    </nav>
+  </section>
+</div>
+<!-- /container-->
+
+<!--Footer-->
+<footer></footer>
